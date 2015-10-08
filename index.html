@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="uniqlo" >
+<head>
+    <meta charset="UTF-8">
+    <title>Uniqlo Clothes checker</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+    <script>var app = angular.module("uniqlo",[]);</script>
+    <script src="uniqloApp.js"></script>
+</head>
+<body>
+    <div ng-controller="clothesCtrl">
+        <p>Please enter the clothes id:</p>
+        <input type="text" id="clothid" name="clothid" ng-model="clothid">
+        <button ng-click="find()")>check</button>
+    </div>
+<div ng-model="clothinfo"></div>
+</body>
+</html>
